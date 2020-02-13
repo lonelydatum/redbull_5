@@ -259,7 +259,7 @@ sup {
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
-  clip: rect(0px, 300px, 370px, 0px);
+  clip: rect(190px, 300px, 370px, 0px);
 }
 
 /*# sourceMappingURL=main.css.map */

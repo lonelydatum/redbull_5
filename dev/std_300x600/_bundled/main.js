@@ -6,8 +6,8 @@ function start() {
 	tl.set('.frame1', { opacity: 1 });
 
 	tl.add("txt");
-	tl.from('.t1_b', .8, { opacity: 0, x: 300, ease: Power2.easeOut }, "txt");
-	tl.from('.t1_a', .8, { opacity: 0, x: -300, ease: Power2.easeOut }, "txt");
+	tl.from('.t1_b', .8, { opacity: 0, x: 300, ease: Power3.easeOut }, "txt");
+	tl.from('.t1_a', .8, { opacity: 0, x: -300, ease: Power3.easeOut }, "txt");
 
 	tl.add("cans", "-=.5");
 	tl.from('.can_sf.whole', .4, { x: -300, ease: Power3.easeOut }, "cans");
@@ -18,8 +18,8 @@ function start() {
 	tl.from('.can_ed.half', .1, { opacity: 0 });
 
 	tl.add("arcs");
-	tl.add(arc('.arc_ed'), "arcs");
 	tl.add(arc_sf('.arc_sf'), "arcs");
+	tl.add(arc('.arc_ed'), "arcs");
 
 	tl.from('.cta', .3, { opacity: 0, y: "+=20", ease: Back.easeOut });
 }
@@ -27,8 +27,8 @@ function start() {
 function arc(dom) {
 
 	var tl = new TimelineMax();
-	tl.from(dom, .3, { opacity: 0 });
-	tl.to(dom, 1, { rotation: "+=460", repeat: 0, ease: Power4.easeOut });
+	tl.from(dom, .1, { opacity: 0 });
+	tl.to(dom, 1.8, { rotation: "+=460", repeat: 0, ease: Power4.easeOut });
 
 	return tl;
 }
@@ -36,7 +36,7 @@ function arc(dom) {
 function arc_sf(dom) {
 
 	var tl = new TimelineMax();
-	tl.from(dom, .3, { opacity: 0 });
+	tl.from(dom, .1, { opacity: 0 });
 	tl.to(dom, 1, { rotation: "+=360", repeat: 0, ease: Power4.easeOut });
 
 	return tl;
