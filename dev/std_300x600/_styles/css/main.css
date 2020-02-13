@@ -71,7 +71,7 @@ a {
 body {
   margin: 0;
   padding: 0;
-  background-color: #0b1446;
+  background-color: white;
 }
 
 canvas {
@@ -86,7 +86,7 @@ canvas {
   height: 250px;
   overflow: hidden;
   position: relative;
-  background-color: #01632F;
+  background-color: #0b1446;
   -webkit-text-size-adjust: 100%;
   opacity: 1;
   cursor: pointer;
@@ -226,9 +226,9 @@ sup {
   -webkit-transform-origin: 206px 370px;
   -ms-transform-origin: 206px 370px;
   transform-origin: 206px 370px;
-  -webkit-transform: translate(0px, 0px) scale(1) rotate(-120deg);
-  -ms-transform: translate(0px, 0px) scale(1) rotate(-120deg);
-  transform: translate(0px, 0px) scale(1) rotate(-120deg);
+  -webkit-transform: translate(0px, 0px) scale(1) rotate(-100deg);
+  -ms-transform: translate(0px, 0px) scale(1) rotate(-100deg);
+  transform: translate(0px, 0px) scale(1) rotate(-100deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
