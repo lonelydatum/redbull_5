@@ -1,7 +1,7 @@
 
 function start() {
 	const tl = new TimelineMax()
-
+	tl.set('.frame1', {opacity:1})
 	tl.add("cans")
 	
 	tl.from('.can_ed.whole', .5, {x:300, ease:Power2.easeOut}, "cans")
