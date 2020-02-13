@@ -21,14 +21,14 @@ function start() {
 	tl.add(arc_sf('.arc_sf'), "arcs");
 	tl.add(arc('.arc_ed'), "arcs");
 
-	tl.from('.cta', .3, { opacity: 0, y: "+=20", ease: Back.easeOut });
+	tl.from('.cta', .4, { opacity: 0, y: "+=20", ease: Back.easeOut }, "arcs+=1");
 }
 
 function arc(dom) {
 
 	var tl = new TimelineMax();
 	tl.from(dom, .1, { opacity: 0 });
-	tl.to(dom, 1.8, { rotation: "+=460", repeat: 0, ease: Power4.easeOut });
+	tl.to(dom, 1.4, { rotation: "+=460", repeat: 0, ease: Power4.easeOut });
 
 	return tl;
 }
