@@ -2,6 +2,9 @@
 'use strict';
 
 function start() {
+
+	TweenLite.from('.bg', 4, { opacity: 0, ease: Power2.easeOut, delay: 1 });
+
 	var tl = new TimelineMax();
 	tl.set('.frame1', { opacity: 1 });
 
@@ -12,16 +15,13 @@ function start() {
 	tl.add("cans", "-=.5");
 	tl.from('.can_sf.whole', .4, { x: -300, ease: Power3.easeOut }, "cans");
 	tl.from('.can_ed.whole', .5, { x: 300, ease: Power3.easeOut }, "cans+=.3");
-
-	TweenLite.from('.bg', 4, { opacity: 0, ease: Power2.easeOut, delay: 1 });
+	tl.from('.cta', .4, { opacity: 0, y: "+=20", ease: Back.easeOut }, "cans+=.5");
 
 	tl.from('.can_ed.half', .1, { opacity: 0 });
 
 	tl.add("arcs");
 	tl.add(arc_sf('.arc_sf'), "arcs");
 	tl.add(arc('.arc_ed'), "arcs");
-
-	tl.from('.cta', .4, { opacity: 0, y: "+=20", ease: Back.easeOut }, "arcs+=.3");
 }
 
 function arc(dom) {
