@@ -20,7 +20,7 @@ function start() {
 	tl.add(arc('.arc_ed'), "arcs")
 	
 
-	tl.from('.cta', .4, {opacity:0, y:"+=20", ease:Back.easeOut}, "arcs+=1")
+	tl.from('.cta', .4, {opacity:0, y:"+=20", ease:Back.easeOut}, "arcs+=.3")
 }
 
 function arc(dom){

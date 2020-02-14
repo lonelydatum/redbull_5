@@ -30,6 +30,6 @@
 }
 
 .can_ed.half{
-	@include pos(00, 0);
+	@include pos(0, 0);
 	clip: rect(190px, 300px, 370px, 0px);
 }
