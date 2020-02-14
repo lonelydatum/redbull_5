@@ -3,7 +3,7 @@
 
 function start() {
 
-	TweenLite.from('.bg', 4, { opacity: 0, ease: Power2.easeOut, delay: 1 });
+	TweenLite.to('.bg_arc', 2, { opacity: 1, ease: Power2.easeOut, delay: 1.5 });
 
 	var tl = new TimelineMax();
 	tl.set('.frame1', { opacity: 1 });

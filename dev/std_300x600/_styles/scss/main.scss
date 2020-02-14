@@ -5,7 +5,7 @@
 
 
 .frame1 {
-	// opacity: 1;
+	opacity: 1;
 }
 
 
@@ -32,4 +32,9 @@
 .can_ed.half{
 	@include pos(0, 0);
 	clip: rect(190px, 300px, 370px, 0px);
+}
+
+
+.bg_arc{
+	opacity: 0;
 }

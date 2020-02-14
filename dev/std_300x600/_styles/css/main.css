@@ -215,6 +215,10 @@ sup {
   opacity: 0;
 }
 
+.frame1 {
+  opacity: 1;
+}
+
 #banner {
   font-size: 20px;
   color: #333;
@@ -260,6 +264,10 @@ sup {
   perspective: 1000px;
   position: absolute;
   clip: rect(190px, 300px, 370px, 0px);
+}
+
+.bg_arc {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
