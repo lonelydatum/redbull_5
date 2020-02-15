@@ -3,12 +3,12 @@
 
 function start() {
 
-	TweenLite.to('.bg_arc', 2, { opacity: 1, ease: Power2.easeOut, delay: 1.5 });
+	TweenLite.to('.bg_arc', 2.5, { opacity: 1, ease: Power2.easeOut, delay: 1.5 });
 
 	var tl = new TimelineMax();
 	tl.set('.frame1', { opacity: 1 });
 
-	tl.add("cans", "+=.5");
+	tl.add("cans", 0);
 	tl.from('.can_sf.whole', .4, { x: -300, ease: Power3.easeOut }, "cans");
 	tl.from('.can_ed.whole', .5, { x: 300, ease: Power3.easeOut }, "cans+=.3");
 
