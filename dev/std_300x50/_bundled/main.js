@@ -29,7 +29,7 @@ function arc(dom) {
 
 	var tl = new TimelineMax();
 	tl.from(dom, .1, { opacity: 0 });
-	tl.to(dom, 1.4, { rotation: "+=360", scale: .5, ease: Power4.easeOut });
+	tl.to(dom, 1.9, { rotation: "+=360", scale: .5, ease: Power4.easeOut });
 
 	return tl;
 }
@@ -38,7 +38,7 @@ function arc_sf(dom) {
 
 	var tl = new TimelineMax();
 	tl.from(dom, .1, { opacity: 0 });
-	tl.to(dom, 1, { rotation: "+=360", repeat: 0, ease: Power4.easeOut });
+	tl.to(dom, 1.5, { rotation: "+=360", repeat: 0, ease: Power4.easeOut });
 
 	return tl;
 }

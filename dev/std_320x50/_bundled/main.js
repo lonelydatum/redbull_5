@@ -13,7 +13,7 @@ function start() {
 	tl.from('.can_ed.whole', .5, { x: 300, ease: Power3.easeOut }, "cans+=.3");
 
 	tl.add("txt");
-	tl.from('.t1_a', .8, { opacity: 0, x: -200, ease: Power3.easeOut }, "txt");
+	tl.from('.t1_a', .8, { opacity: 0, x: -120, ease: Power3.easeOut }, "txt");
 	tl.from('.t1_b', .8, { opacity: 0, x: 300, ease: Power3.easeOut }, "txt");
 	tl.from('.t1_c', .8, { opacity: 0, x: -200, ease: Power3.easeOut }, "txt");
 	tl.from('.cta', .4, { opacity: 0, y: "+=20", ease: Back.easeOut }, "+=.1");
@@ -29,7 +29,7 @@ function arc(dom) {
 
 	var tl = new TimelineMax();
 	tl.from(dom, .1, { opacity: 0 });
-	tl.to(dom, 1.9, { rotation: "+=360", scale: .5, ease: Power4.easeOut });
+	tl.to(dom, 2, { rotation: "+=400", scale: .5, ease: Power4.easeOut });
 
 	return tl;
 }
@@ -38,7 +38,7 @@ function arc_sf(dom) {
 
 	var tl = new TimelineMax();
 	tl.from(dom, .1, { opacity: 0 });
-	tl.to(dom, 1.5, { rotation: "+=360", repeat: 0, ease: Power4.easeOut });
+	tl.to(dom, 1.7, { rotation: "+=360", repeat: 0, ease: Power4.easeOut });
 
 	return tl;
 }
