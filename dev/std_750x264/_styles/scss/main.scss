@@ -1,0 +1,41 @@
+
+
+@import '../../../_common/styles/common.scss';
+
+
+
+.frame1 {
+	// opacity: 1;
+}
+
+
+
+#banner{
+	font-size: 20px;
+	color: #333;
+	width: 750px;
+	height: 264px;
+}
+
+
+.arc_ed{
+	transform-origin: 330px 416px;
+	@include pos-scale-rotate(-130, -157, 0.6, -100);
+}
+
+
+.arc_sf{
+	transform-origin: 194px 164px;
+	@include pos-scale-rotate(-63, -47, 0.6, 0);
+}
+
+.can_ed.half{
+	@include pos-scale(0, 0, .5);
+	clip: rect(332px, 750px, 560px, 0px);
+
+}
+
+.bg_arc{
+	opacity: 0;
+}
+
